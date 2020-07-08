@@ -13,5 +13,6 @@ Il circuito con *f(x)*  costante:
 ## Codifica del problema
 Il problema viene risolto qui usando un circuito quantistico. La progettazione del circuito equivale alla preparazione di un diagramma di flusso. L'approccio usato è quello della modellazione semiclassica per cui la funzione *f* deve essere mappata in un operatore unitario U<sub>f</sub> 
 - convenzionale
-
 *x* &rarr; *f(x)*
+- quantistica
+*(x,y)*&rarr;*(x,y&oplus;f(x))*
