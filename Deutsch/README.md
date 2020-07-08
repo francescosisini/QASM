@@ -3,9 +3,7 @@ Il problema di Deutsh consiste in una *black box* che accetta un bit o qubit e r
 Un algoritmo convenzionale richiede due chiamate alla funzione, mentre un algoritmo quantistico una sola.
 Questo semplice esempio è una dimostrazione della efficienza quantistica per quel che rigurda la complessità di comunicazione.
 
-Il circuito con *f(x)* non costante:
 
-![non-costante](circuit(3).png)
 
 Il circuito con *f(x)*  costante:
 
@@ -16,3 +14,13 @@ Il problema viene risolto qui usando un circuito quantistico. La progettazione d
 *x* &rarr; *f(x)*
 - quantistica
 *(x,y)*&rarr;*(x,y&oplus;f(x))*
+- Funzione costante *f(1) == f(0) == 0 *
+in questo caso si ricava che *U<sub>f</sub> = I&otimes;X*
+Il circuito con *f(x)* non costante:
+
+![non-costante](circuit(3).png)
+- Funzione non costante *f(1) == 1, f(0) == 0 *
+in questo caso si ricava che *U<sub>f</sub> = |0><0|&otimes;I+|1><1|&otimes;X*
+Il circuito con *f(x)* non costante:
+
+![non-costante](circuit(2).png)
